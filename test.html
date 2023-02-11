@@ -8,13 +8,28 @@
 </head>
 <body>
     
-    <h1>HELLO WORLD!</h1>
+    <h1 id="title">HELLO WORLD!</h1>
     <h2>This is my first professional website</h2>
-    
+
     <p>This is my branch</p>
     <p>Just me messing around</p>
 
     <h3>Ta da</h3>
+
+    <button onclick="change()">Click Me</button>
+
+    <script>
+        function change(){
+            var x = document.getElementById("title").innerHTML;
+
+            if (x === "Changed!"){
+                document.getElementById("title").innerHTML = "Hello World!";
+            } else {
+                document.getElementById("title").innerHTML = "Changed!";
+            }
+
+        }
+    </script>
 
 </body>
 </html>
